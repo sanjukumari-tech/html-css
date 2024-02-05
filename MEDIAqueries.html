@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media Queries</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #media {
+            height: 50vh;
+            border: 1px solid;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        #media>div:nth-child(2) {
+            background-color: rgb(57, 113, 167);
+        }
+
+        #media>div:nth-child(1) {
+            background-color: rgb(10, 32, 156);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        img {
+            height: 200px;
+            width: 300px;
+        }
+
+        #footer {
+            height: 20vh;
+            width: 100%;
+            display: flex;
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+
+        #footer>footer>span>img {
+            height: 20%;
+            width: 20%;
+        }
+
+        #same {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 20px;
+            color: white;
+        }
+
+        #footer:nth-child(1)>span,
+        #footer:nth-child(2)>span {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+        }
+
+        #footer:nth-child(2)>span {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="media">
+        <div>
+            <img src="https://img.freepik.com/free-vector/realistic-bunch-lotus-flowers_1284-24651.jpg?w=740&t=st=1707046947~exp=1707047547~hmac=cfda67738f734c5a6e7b7fc74e9130a745cb03e5f3ef9b93a26462bfbd0ddc3e"
+                alt="">
+        </div>
+        <div id="same">
+            <div>
+                <h3>Shop</h3>
+                <h4>Gift cards</h4>
+                <h4>Etsy Registry</h4>
+                <h4>sitemap</h4>
+                <h4>Etsy blog</h4>
+                <h4>Etsy United Kingdom</h4>
+                <h4>Etsy Germany</h4>
+                <h4>Etsy Canada</h4>
+            </div>
+            <div>
+                <h3>Sell</h3>
+                <h4>sell on Etsy</h4>
+                <h4>Teams</h4>
+                <h4>Fortums</h4>
+                <h4>Affiliates & Creators</h4>
+            </div>
+            <div>
+                <h3>About</h3>
+                <h4>Etsy, Inc.</h4>
+                <h4>Policies</h4>
+                <h4>Investors</h4>
+                <h4>Carrers</h4>
+                <h4>Press</h4>
+                <h4>Impact</h4>
+                <h4>Legal Imprint</h4>
+            </div>
+            <div>
+                <h3>Shopo</h3>
+                <h4>Gift cards</h4>
+                <h4>Etsy Registry</h4>
+                <h4>Sitemap</h4>
+                <h4>Etsy blog</h4>
+                <h4>Etsy United Kingdom</h4>
+                <h4>Etsy Germany</h4>
+                <h4>Etsy Canada</h4>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <footer>
+            <span><img
+                    src="https://knowindia.india.gov.in/assets/images/national_flag_inner.jpg" alt=""> </span>
+            <span><a> <h5>India | English(IN) | (INR)</h5></a> </span> </footer>
+        <footer> @ 2024 Etsy.Inc. <span> <a> Terms of Use </a></span><a> Privacy</a><span> </span><span><a
+                    href="">Interest-based ads</a> </span><span><a href=""> Local Shops</a> </span><span> <a
+                    href=""> Region</a></span></footer>
+    </div>
+</body>
+
+</html>
